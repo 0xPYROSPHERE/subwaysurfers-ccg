@@ -2842,7 +2842,7 @@
                             }
                         }))
                     }))
-                }, this.videoElement = document.getElementById("pokiSDKVideoContainer"), this.adsManager = null, this.volume = e, this.initAdDisplayContainer(), this.initBlankVideo(), this.initAdsLoader()
+                }, this.videoElement = document.getElementById("pokiSDKVideoContainer"), this.adsManager = null, this.volume = e, this.initAdDisplayContainer(), this.initBlankVideo()
             }
             return e.prototype.initAdDisplayContainer = function() {
                
@@ -2887,7 +2887,7 @@
             }, e.prototype.resumeAd = function() {
                 o.dispatchEvent(n.ads.video.resumed), this.adsManager && this.adsManager.resume()
             }, e.prototype.tearDown = function() {
-                this.adsManager && (this.adsManager.stop(), this.adsManager.destroy(), this.adsManager = null), null !== this.bannerTimeout && (clearTimeout(this.bannerTimeout), this.bannerTimeout = null), this.adsLoader && (this.adsLoader.contentComplete(), this.adsLoader.destroy(), this.adsLoader = null, this.initAdsLoader()), this.runningAd = !1
+                this.adsManager && (this.adsManager.stop(), this.adsManager.destroy(), this.adsManager = null), null !== this.bannerTimeout && (clearTimeout(this.bannerTimeout), this.bannerTimeout = null), this.adsLoader && (this.adsLoader.contentComplete(), this.adsLoader.destroy(), this.adsLoader = null), this.runningAd = !1
             }, e.prototype.attachAdEvents = function() {
                 var e = this,
                     t = google.ima.AdEvent.Type;
