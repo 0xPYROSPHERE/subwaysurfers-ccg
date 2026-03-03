@@ -6926,7 +6926,6 @@
             }, s.resume = function(t) {
                 void 0 === t && (t = 0), this.state === Game.PAUSED && (t ? this.hud.runCountdown(t, this.resume.bind(this)) : (this.state = Game.RUNNING, this.onResume.run(), nn.a.SDK.gameplayStart()))
             }, s.gameover = function() {
-                sdk.showBanner();
                 if (enableADS) {
                     //playAds();
 
