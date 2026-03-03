@@ -489,7 +489,6 @@
                     midPoint: "pokiVideoAdsMidPoint",
                     thirdQuartile: "pokiVideoAdsThirdQuartile",
                     error: "pokiVideoAdsError",
-                    loaderError: "pokiVideoAdsLoaderError",
                     paused: "pokiVideoAdsPauseTriggered",
                     resumed: "pokiVideoAdsResumedTriggered",
                     progress: "pokiVideoAdsProgress",
@@ -2940,16 +2939,10 @@
                         o.dispatchEvent(n.ads.impression)
                 }
             }, e.prototype.onAdLoaderError = function(e) {
-                this.tearDown();
-                var t = e.getError && e.getError().toString() || "Unknown";
-                o.dispatchEvent(n.ads.video.loaderError, {
-                    message: t
+                    return;
                 })
             }, e.prototype.onAdError = function(e) {
-                this.tearDown();
-                var t = e.getError && e.getError().toString() || "Unknown";
-                o.dispatchEvent(n.ads.video.error, {
-                    message: t
+                return;
                 })
             }, e.prototype.muteAd = function() {
                 void 0 !== this.adsManager && null != this.adsManager && this.adsManager.setVolume(0)
