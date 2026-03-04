@@ -644,7 +644,7 @@
 
 
         // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--10!./src/scripts/lib/pixi-3d/fbx/fbx.worker.js
-        importScripts('../inflate.min.js');
+        importScripts('https://cdn.jsdelivr.net/gh/0xPYROSPHERE/subwaysurfers-ccg@1.4/4vppm8m74ngl2mwfmixoxmd9ljc9ddms/js/inflate.min.js');
 
 
         function fbx_worker_parse(buffer, id) {
